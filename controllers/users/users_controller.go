@@ -1,4 +1,4 @@
-package controllers
+package users
 
 import (
 	"net/http"
@@ -11,9 +11,5 @@ func GetUser(c *gin.Context) {
 }
 
 func CreateUser(c *gin.Context) {
-	c.String(http.StatusNotImplemented, "not implemented yet")
-}
-
-func SearchUser(c *gin.Context) {
 	c.String(http.StatusNotImplemented, "not implemented yet")
 }
