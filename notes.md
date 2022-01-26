@@ -27,3 +27,6 @@ This training seems very confusing, so I take some notes/comments to the session
   The session starts with another code stage as the last finished one (`CreateUser() ... return nil, nil`).
   But the trainer is a real developer. He did "boom" sounds when the api crushed (like expected).
   He closes the session with some `git` commands. Of course the first time (no `git` usage in the sessions before)
+
+- Lesson 9  
+  Good real world infos to working with time and timezones. The trainer changes the class and folder naming within the session.
