@@ -3,7 +3,7 @@
 This training seems very confusing, so I take some notes/comments to the sessions.
 
 ## Chapter2 
-- Lesson 6  
+- **6. Basic application structure: MVC pattern**  
   Hey, I totally struggled in the 1st session of the training (lesson 6)!
   
   Why?
@@ -18,15 +18,15 @@ This training seems very confusing, so I take some notes/comments to the session
   
   Axo, Press "Run" in the jetbrains IDE. Cmon make it more common with `go run main.go` for all without this dependency.
 
-- Lesson 7  
+- **7. Starting from our domain**  
   What a chaotic session!  
-  The trainer jumps nervous clicky throught the session. Uses different error handling within one block to save on variable (because he replaces it later by a summary function call of the framework). Wild story of API and the whole project to explain the use of predefined error items. Strange (for me) explanations of basic GO concept (multiple return values). He closed the session with some API-Calls within the software [Postman](https://www.postman.com/). Of course without naming or explanation of it. 
+  The trainer jumps nervous clicky throught the session. Uses different error handling within one block to save one variable (because he replaces it later by a summary function call of the framework). Wild story of API and the whole project to explain the use of predefined error items. Strange (for me) explanations of basic GO concept (multiple return values). He closed the session with some API-Calls within the software [Postman](https://www.postman.com/). Of course without naming or explanation of it. 
   Yes, I got some infos but I still hate this trainer by now!
 
-- Lesson 8  
+- **8. How to structure our domain persistence**  
   The session starts with another code stage as the last finished one (`CreateUser() ... return nil, nil`).
   But the trainer is a real developer. He did "boom" sounds when the api crushed (like expected).
   He closes the session with some `git` commands. Of course the first time (no `git` usage in the sessions before)
 
-- Lesson 9  
-  Good real world infos to working with time and timezones. The trainer changes the class and folder naming within the session.
+- **9. Working with dates**  
+  Good real world infos of working with time and timezones. The trainer changes the class and folder naming within the session (`date_utils` in the `utils` folder? the object calls included this ...).
