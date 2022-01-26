@@ -3,7 +3,7 @@
 This training seems very confusing, so I take some notes/comments to the sessions.
 
 ## Chapter2 
-- **6. Basic application structure: MVC pattern**  
+- **6. Basic application structure: MVC pattern** - Code: [2.6]  
   Hey, I totally struggled in the 1st session of the training (lesson 6)!
   
   Why?
@@ -18,15 +18,22 @@ This training seems very confusing, so I take some notes/comments to the session
   
   Axo, Press "Run" in the jetbrains IDE. Cmon make it more common with `go run main.go` for all without this dependency.
 
-- **7. Starting from our domain**  
+- **7. Starting from our domain** - Code: [2.7]  
   What a chaotic session!  
   The trainer jumps nervous clicky throught the session. Uses different error handling within one block to save one variable (because he replaces it later by a summary function call of the framework). Wild story of API and the whole project to explain the use of predefined error items. Strange (for me) explanations of basic GO concept (multiple return values). He closed the session with some API-Calls within the software [Postman](https://www.postman.com/). Of course without naming or explanation of it. 
   Yes, I got some infos but I still hate this trainer by now!
 
-- **8. How to structure our domain persistence**  
+- **8. How to structure our domain persistence** - Code: [2.8]  
   The session starts with another code stage as the last finished one (`CreateUser() ... return nil, nil`).
   But the trainer is a real developer. He did "boom" sounds when the api crushed (like expected).
   He closes the session with some `git` commands. Of course the first time (no `git` usage in the sessions before)
 
-- **9. Working with dates**  
-  Good real world infos of working with time and timezones. The trainer changes the class and folder naming within the session (`date_utils` in the `utils` folder? the object calls included this ...).
+- **9. Working with dates** - Code: [2.9]  
+  Good real world infos of working with time and timezones. The trainer changes the class and folder naming within the session (`date_utils` in the `utils` folder? the object calls included this ... ).
+
+
+
+[2.9]: https://github.com/deeagle/bookstore_users-api/releases/tag/2.9
+[2.8]: https://github.com/deeagle/bookstore_users-api/releases/tag/2.8
+[2.7]: https://github.com/deeagle/bookstore_users-api/releases/tag/2.7
+[2.6]: https://github.com/deeagle/bookstore_users-api/releases/tag/2.6
