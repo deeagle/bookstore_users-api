@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"myapp/domain/users"
+	"myapp/services"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -26,5 +27,11 @@ func CreateUser(c *gin.Context) {
 		log.Println(json_err)
 		return
 	}
-	c.String(http.StatusNotImplemented, "not implemented yet")
+
+	result, saveErr := services.CreateUser(user)
+	if saveErr != nil {
+		log.Println(saveErr)
+		return
+	}
+	c.JSON(http.StatusCreated, result)
 }
