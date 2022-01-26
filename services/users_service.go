@@ -11,5 +11,10 @@ func CreateUser(user users.User) (*users.User, *errors.RestErr) {
 		return nil, userErr
 	}
 
+	saveErr := user.Save()
+	if saveErr != nil {
+		return nil, saveErr
+	}
+
 	return &user, nil
 }
