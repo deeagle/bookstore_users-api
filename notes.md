@@ -3,7 +3,7 @@
 This training seems very confusing, so I take some notes/comments to the sessions.
 
 ## Chapter2 
-- Lesson 6
+- Lesson 6  
   Hey, I totally struggled in the 1st session of the training (lesson 6)!
   
   Why?
@@ -18,7 +18,12 @@ This training seems very confusing, so I take some notes/comments to the session
   
   Axo, Press "Run" in the jetbrains IDE. Cmon make it more common with `go run main.go` for all without this dependency.
 
-- Lesson 7
-  What a chaotic session!
+- Lesson 7  
+  What a chaotic session!  
   The trainer jumps nervous clicky throught the session. Uses different error handling within one block to save on variable (because he replaces it later by a summary function call of the framework). Wild story of API and the whole project to explain the use of predefined error items. Strange (for me) explanations of basic GO concept (multiple return values). He closed the session with some API-Calls within the software [Postman](https://www.postman.com/). Of course without naming or explanation of it. 
   Yes, I got some infos but I still hate this trainer by now!
+
+- Lesson 8  
+  The session starts with another code stage as the last finished one (`CreateUser() ... return nil, nil`).
+  But the trainer is a real developer. He did "boom" sounds when the api crushed (like expected).
+  He closes the session with some `git` commands. Of course the first time (no `git` usage in the sessions before)
