@@ -4,6 +4,7 @@ import (
 	"log"
 	"myapp/domain/users"
 	"myapp/services"
+	"myapp/utils/errors"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -19,6 +20,12 @@ func CreateUser(c *gin.Context) {
 	err := c.ShouldBindJSON(&user)
 	if err != nil {
 		log.Println(err)
+		restErr := errors.RestErr{
+			Message: "invalid json body",
+			Status:  http.StatusBadRequest,
+			Error:   "bad_request",
+		}
+		c.JSON(restErr.Status, restErr)
 		return
 	}
 
