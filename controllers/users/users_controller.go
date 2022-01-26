@@ -1,8 +1,6 @@
 package users
 
 import (
-	"encoding/json"
-	"io/ioutil"
 	"log"
 	"myapp/domain/users"
 	"myapp/services"
@@ -17,14 +15,10 @@ func GetUser(c *gin.Context) {
 
 func CreateUser(c *gin.Context) {
 	var user users.User
-	bytes, err := ioutil.ReadAll(c.Request.Body)
+
+	err := c.ShouldBindJSON(&user)
 	if err != nil {
 		log.Println(err)
-		return
-	}
-	json_err := json.Unmarshal(bytes, &user)
-	if json_err != nil {
-		log.Println(json_err)
 		return
 	}
 
