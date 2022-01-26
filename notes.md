@@ -17,4 +17,8 @@ This training seems very confusing, so I take some notes/comments to the session
   So I find the most of my dependency problems.
   
   Axo, Press "Run" in the jetbrains IDE. Cmon make it more common with `go run main.go` for all without this dependency.
-	
+
+- Lesson 7
+  What a chaotic session!
+  The trainer jumps nervous clicky throught the session. Uses different error handling within one block to save on variable (because he replaces it later by a summary function call of the framework). Wild story of API and the whole project to explain the use of predefined error items. Strange (for me) explanations of basic GO concept (multiple return values). He closed the session with some API-Calls within the software [Postman](https://www.postman.com/). Of course without naming or explanation of it. 
+  Yes, I got some infos but I still hate this trainer by now!
