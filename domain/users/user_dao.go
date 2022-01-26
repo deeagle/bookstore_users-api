@@ -2,8 +2,8 @@ package users
 
 import (
 	"fmt"
+	"myapp/utils/date_utils"
 	"myapp/utils/errors"
-	"time"
 )
 
 var (
@@ -33,8 +33,7 @@ func (user *User) Save() *errors.RestErr {
 		}
 		return errors.NewBadRequestError(fmt.Sprintf("user %d already exists", user.Id))
 	}
-	now := time.Now()
-	user.DateCreated = now.Format("02.01.2006T15:04:05.000Z")
+	user.DateCreated = date_utils.GetNowString()
 
 	usersDB[user.Id] = user
 
