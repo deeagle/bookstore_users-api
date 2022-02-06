@@ -31,8 +31,15 @@ This training seems very confusing, so I take some notes/comments to the session
 - **9. Working with dates** - Code: [2.9]  
   Good real world infos of working with time and timezones. The trainer changes the class and folder naming within the session (`date_utils` in the `utils` folder? the object calls included this ... ).
 
+## Chapter 3
+- **10. Configure MySQL client in Go** - Code: [3.10]
+  Ah okay, you do this course so you know how databases work. And I'm so a real professional that I use Oracle MySQL with a gui tool to prepare my database (what a victim). And I'm so very professional that I use `utf8_spanish2_ci` for my international students. Ok he talks about that but why not go further and be a real trainer.  
+  Oh nice, he shows us how to use IDE environment vars ... for GoLand and bash. Ok windows is not professional, but volataile exports? Nah, yml configs are so ugly nowadays ...   
+  What a hard course for me ...  
+  I add some docker compose and database creation scripts
 
 
+[3.10]: https://github.com/deeagle/bookstore_users-api/releases/tag/3.10 
 [2.9]: https://github.com/deeagle/bookstore_users-api/releases/tag/2.9
 [2.8]: https://github.com/deeagle/bookstore_users-api/releases/tag/2.8
 [2.7]: https://github.com/deeagle/bookstore_users-api/releases/tag/2.7
