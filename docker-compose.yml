@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db:
+    image: mariadb
+    container_name: gorestdb
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: goroot
+      MYSQL_DATABASE: gorest
+    ports:
+      - "3307:3306"
