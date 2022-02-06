@@ -9,8 +9,16 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
+const (
+// trainer uses not handy stuff (for me)
+// environment variables (export) instead of a config.yml (chapter 3:10)
+)
+
 var (
 	Client *sql.DB
+
+	// trainer uses not handy stuff (for me)
+	// environment variables (export) instead of a config.yml (chapter 3:10)
 )
 
 func init() {
@@ -21,6 +29,7 @@ func init() {
 		"3307",
 		"users_db",
 	)
+	fmt.Println(datasourceName)
 	var err error
 	Client, err := sql.Open("mysql", datasourceName)
 	if err != nil {
